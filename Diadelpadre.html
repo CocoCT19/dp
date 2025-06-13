@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¡Feliz Día del Padre!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #e3f2fd;
+      color: #003366;
+    }
+
+    header {
+      background: linear-gradient(to right, #4fc3f7, #81d4fa);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      animation: fadeIn 2s ease;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    nav {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: #0077c2;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #004c8c;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-out;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: #01579b;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.4s ease;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .letter {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      animation: fadeInUp 2s ease-in;
+    }
+
+    .phrases {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .phrase {
+      background: #e1f5fe;
+      padding: 1.5rem;
+      border-left: 6px solid #0288d1;
+      border-radius: 6px;
+      font-style: italic;
+    }
+
+    footer {
+      background-color: #01579b;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+
+    footer p {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+    }
+
+    /* Animaciones */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>¡Feliz Día del Padre!</h1>
+    <p>Gracias por ser un ejemplo, un héroe y un gran amigo. 💙</p>
+  </header>
+
+  <nav>
+    <a href="#galeria">Galería</a>
+    <a href="#carta">Carta</a>
+    <a href="#frases">Frases</a>
+    <a href="#final">Final</a>
+  </nav>
+
+  <section id="galeria">
+    <h2>📷 Galería de Recuerdos</h2>
+    <div class="gallery">
+      <img src="IMG-20250612-WA0001.jpg" alt="Foto 1">
+      <img src="IMG-20250612-WA0002.jpg" alt="Foto 2">
+      <img src="IMG-20250612-WA0003.jpg" alt="Foto 3">
+      <img src="IMG-20250612-WA0004.jpg" alt="Foto 4">
+    </div>
+  </section>
+
+  <section id="carta">
+    <h2>📜 Carta para Ti, Papá</h2>
+    <div class="letter">
+      Querido Alberto Guerro, (si tu):<br><br>
+      Aunque no crecimos todos los días juntos, cada fin de semana contigo dejó huellas que no se borran. Me acuerdo de tantas cosas… de cuando fuimos al Sambil y dejaste las llaves en la zona de juegos, o de aquellas veces en que jugábamos fútbol, o simplemente me llevabas contigo al trabajo. Eran momentos sencillos, pero para mí valían oro.
+
+Tienes un carácter fuerte, y a veces eres duro con tus palabras, pero también sé que todo lo haces con la intención de que yo sea mejor. Y aunque a veces no lo diga, aprecio mucho lo que me enseñas con tu forma de ser, con tus historias, y con tu ejemplo.
+
+Gracias por estar ahí, por buscar tiempo para mí, por mostrarme tu mundo, y por preocuparte incluso cuando no sabías cómo decirlo. Sé que la vida no ha sido fácil, pero tú has estado firme, como ese árbol que no se cae aunque sople fuerte el viento.
+
+Hoy quiero decirte algo desde el fondo de mi corazón: te quiero mucho, Pa.
+Gracias por ser parte de mi vida, y por dejarme ser parte de la tuya.
+
+Con cariño,<br><strong>Tu hijo, Luis 💙</strong>
+    </div>
+  </section>
+
+  <section id="frases">
+    <h2>💬 Frases que Inspiran</h2>
+    <div class="phrases">
+      <div class="phrase">"Un buen padre vale por cien maestros." — Jean-Jacques Rousseau</div>
+      <div class="phrase">"No es la carne ni la sangre, sino el corazón, lo que nos hace padres e hijos."</div>
+      <div class="phrase">"Papá: siempre mi protector, siempre mi guía."</div>
+    </div>
+  </section>
+
+  <section id="final">
+    <h2>🎉 Te lo mereces todo</h2>
+    <p style="font-size: 1.3rem; margin-top: 1rem;">
+      Hoy celebramos a un gran hombre: a ti. ¡Gracias por todo, pa!
+    </p>
+  </section>
+
+  <footer>
+    <h3>Con todo mi cariño 💙</h3>
+    <p>Diseñado por tu hijo, Luis Guerra - SENA 2025</p>
+  </footer>
+
+  <script>
+    // Mostrar secciones con efecto al hacer scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll("section").forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
